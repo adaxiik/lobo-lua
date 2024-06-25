@@ -30,5 +30,5 @@ OUTPUT_DIR=$PROJECT_PATH/$PLATFORM
 
 mkdir -p $OUTPUT_DIR
 
-$CC -c $CFLAGS $SRC_DIR/onelua.c -I$INCLUDE_DIR -o $OUTPUT_DIR/onelua.o
+$CC -c $CFLAGS $SRC_DIR/onelua.c -I$INCLUDE_DIR -o $OUTPUT_DIR/onelua.o $PLATFORM_FLAGS
 ar rcs $OUTPUT_DIR/liblua.a $OUTPUT_DIR/onelua.o
