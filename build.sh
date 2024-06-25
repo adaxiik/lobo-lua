@@ -11,7 +11,7 @@ PROJECT_PATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 SRC_DIR=$PROJECT_PATH/src
 
 INCLUDE_DIR=$SRC_DIR/include/lua
-CFLAGS="-Wall -Wextra -Werror -std=c99 -O3 -ftree-vectorize -flto -DMAKE_LIB -fno-stack-protector -fno-common"
+CFLAGS="-Wall -Wextra -Werror -std=c99 -O3 -ftree-vectorize -DMAKE_LIB -fno-stack-protector -fno-common"
 OUTPUT_DIR=$PROJECT_PATH/linux
 if [ ! -z "$2" ]; then
     OUTPUT_DIR=$PROJECT_PATH/$2
