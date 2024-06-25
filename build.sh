@@ -21,8 +21,6 @@ INCLUDE_DIR=$SRC_DIR/include/lua
 PLATFORM_FLAGS=""
 if [ "$PLATFORM" = "linux" ]; then
     PLATFORM_FLAGS="-DLUA_USE_POSIX"
-elif [ "$PLATFORM" = "mingw" ]; then
-    PLATFORM_FLAGS="-DLUA_USE_WINDOWS"
 fi
 
 CFLAGS="-Wall -Wextra -Werror -std=c99 -O3 -ftree-vectorize -DMAKE_LIB -fno-stack-protector -fno-common"
